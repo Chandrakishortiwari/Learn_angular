@@ -13,10 +13,10 @@ import { Router,
 })
 export class Home {
 
-  constructor(private router:Router){}
+  // constructor(private router:Router){}
  
-  goToProfile(){
-     this.router.navigate(['profile'],{queryParams:{name:'cktiwari'} })
-  }
+  // goToProfile(){
+  //    this.router.navigate(['profile'],{queryParams:{name:'cktiwari'} })
+  // }
 
 }

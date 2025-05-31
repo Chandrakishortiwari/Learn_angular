@@ -1,29 +1,28 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { __param } from 'tslib';
 
 @Component({
-  selector: 'app-profile',
+  selector: 'app-users-profile',
   imports: [],
-  templateUrl: './profile.html',
-  styleUrl: './profile.css'
+  templateUrl: './users-profile.html',
+  styleUrl: './users-profile.css'
 })
-export class Profile {
+export class UsersProfile {
 
-   username :string| null ="";
-
+  
   constructor(private route:ActivatedRoute){};
   ngOnInit():void{
     // this.username = this.route.snapshot.paramMap.get('name');
     // console.log(this.username);
 
 
-    //  this.route.queryParams.subscribe(params=>{
-    //  this.username =params['name']
-    //  })
-   
+     this.route.params.subscribe(param=>{
+     console.log(param);
+     
     
 
-  }
+  })
+
+}
 
 }
