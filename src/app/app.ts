@@ -1,9 +1,14 @@
+// import { Seccomponent } from './seccomponent/seccomponent';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    //  Seccomponent
+    RouterLink,
+    RouterOutlet
+    ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
