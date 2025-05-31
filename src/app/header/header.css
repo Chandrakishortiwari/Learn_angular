@@ -1,0 +1,15 @@
+.ul{
+    background: #5ba6e7;
+    margin-top: 0;
+    display: flex;
+    gap: 80px;
+    height:40px;
+    align-items: center;
+}
+li{
+  list-style: none;
+}
+.active{
+    background: #cbcbcb;
+    color: rgb(30, 161, 212);
+}
