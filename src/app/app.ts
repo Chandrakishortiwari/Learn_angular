@@ -4,14 +4,16 @@ import {
   // RouterLink, 
   RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
+import { Angulardirective } from './angulardirective/angulardirective';
 
 @Component({
   selector: 'app-root',
   imports: [
     //  Seccomponent
     // RouterLink,
-    RouterOutlet,
-    Header
+    // RouterOutlet,
+    // Header
+    Angulardirective
     ],
   templateUrl: './app.html',
   styleUrl: './app.css'
