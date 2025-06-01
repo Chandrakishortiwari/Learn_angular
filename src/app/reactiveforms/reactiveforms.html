@@ -1,0 +1,13 @@
+<p>reactiveforms works!</p>
+
+<form [formGroup]="userdetils" (ngSubmit)="onSubmit()"  >
+<input type="text" placeholder=" enter fname"  formControlName="name" >
+<span *ngIf="name?.hasError('required')" > Name is required </span>
+<input type="text" placeholder=" enter email" formControlName="email" >
+<br>
+<br>
+<button >Submit</button>
+<br>
+<button (click)="setValue()" >Set value</button>
+</form>
+ 
