@@ -6,6 +6,7 @@ import {
 import { Header } from './header/header';
 import { Angulardirective } from './angulardirective/angulardirective';
 import { Reactiveforms } from './reactiveforms/reactiveforms';
+import { Templateform } from './templateform/templateform';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { Reactiveforms } from './reactiveforms/reactiveforms';
     // RouterOutlet,
     // Header
     // Angulardirective
-    Reactiveforms
+    // Reactiveforms
+    Templateform
     ],
   templateUrl: './app.html',
   styleUrl: './app.css'

@@ -1,0 +1,16 @@
+<p>templateform works!</p>
+
+<form #userForm="ngForm" (ngSubmit)="addDeatiles(userForm.value)">
+    <input type="text" placeholder=" enter your name" name="name" ngModel >
+     <input type="text" placeholder=" enter your password" name="password" ngModel>
+<br><br>
+<select name="gander"   ngModel>
+    <option value="" >Select gender</option>
+    <option value="male">male</option>
+    <option value="female">female</option>
+</select>
+     <button>submit</button>
+     
+</form>
+
+<h1>{{userDeatiles?.name}}</h1>
